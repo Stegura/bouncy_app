@@ -1,6 +1,6 @@
 .portfolio {
     padding-top: 58px;
-    bachground-color: @colorWhiteSmoke;
+    background-color: @colorWhiteSmoke;
     &_startProjektSection {
         background: url(../images/background/background4.jpg) center top / cover;
         margin: 30px auto 100px;
@@ -15,6 +15,8 @@
                 text-align: center;
             }
             .button {
+                color: @colorWhite;
+                cursor: pointer;
                 transition: all .3s;
                 &:hover {
                     background-color: @colorDarkTurquoise;
@@ -26,6 +28,11 @@
             }
         }
     }
+    .modal {
+		form {
+			background: url("../images/background/background4.jpg") center / cover;
+		}
+	}
 }
 .gallery {
     margin-top: 64px;
@@ -127,6 +134,7 @@
                     &_12 {
                         order: -1;
                     } 
+                }
             }
             @media screen and (max-width: 859px) {
                 max-height: 2600px;
@@ -170,7 +178,6 @@
                     }   
                 }
             }   
-            }
             @media screen and (max-width: 859px) {
             max-height: 1932px;
             max-width: 564px;
@@ -216,7 +223,6 @@
             @media screen and (max-width: 590px) {
                 max-height: 3840px;
             }
-
         &_item {
             position: relative;
             overflow: hidden;
